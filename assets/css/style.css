@@ -345,37 +345,37 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Acerca de
+# About me
 --------------------------------------------------------------*/
-.Acerca de .content h3 {
+.About me .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #173b6c;
 }
 
-.Acerca de .content ul {
+.About me .content ul {
   list-style: none;
   padding: 0;
 }
 
-.Acerca de .content ul li {
+.About me .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.Acerca de .content ul strong {
+.About me .content ul strong {
   margin-right: 10px;
 }
 
-.Acerca de .content ul i {
+.About me .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #149ddd;
   line-height: 0;
 }
 
-.Acerca de .content p:last-child {
+.About me .content p:last-child {
   margin-bottom: 0;
 }
 
@@ -433,44 +433,65 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.Habilidades .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+/* styles.css */
+.sphere-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  perspective: 1000px;
 }
 
-.Habilidades .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
+.sphere {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-out;
+  cursor: pointer;
 }
 
-.Habilidades .progress .skill .val {
-  float: right;
-  font-style: normal;
+.sphere img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: inset -8px -8px 15px rgba(54, 54, 54, 0.6), inset 8px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-out, filter 0.5s ease-out;
 }
 
-.Habilidades .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
+.sphere .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }
 
-.Habilidades .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+.sphere:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.5);
 }
+
+.sphere:hover .overlay {
+  opacity: 1;
+}
+
 
 /*--------------------------------------------------------------
-# Experiencia
+# Experience
 --------------------------------------------------------------*/
-.Experiencia .Experiencia-title {
+.Experience.Experience-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -478,14 +499,14 @@ section {
   color: #ffffff;
 }
 
-.Experiencia .Experiencia-item {
+.Experience.Experience-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #1f5297;
   position: relative;
 }
 
-.Experiencia .Experiencia-item h4 {
+.Experience.Experience-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -495,7 +516,7 @@ section {
   margin-bottom: 10px;
 }
 
-.Experiencia .Experiencia-item h5 {
+.Experience.Experience-item h5 {
   font-size: 16px;
   background: #000000;
   padding: 5px 15px;
@@ -504,19 +525,19 @@ section {
   margin-bottom: 10px;
 }
 
-.Experiencia .Experiencia-item ul {
+.Experience.Experience-item ul {
   padding-left: 20px;
 }
 
-.Experiencia .Experiencia-item ul li {
+.Experience.Experience-item ul li {
   padding-bottom: 10px;
 }
 
-.Experiencia .Experiencia-item:last-child {
+.Experience.Experience-item:last-child {
   padding-bottom: 0;
 }
 
-.Experiencia .Experiencia-item::before {
+.Experience.Experience-item::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -842,20 +863,20 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contactos
+# Contacs
 --------------------------------------------------------------*/
-.Contactos {
+.Contacs {
   padding-bottom: 130px;
 }
 
-.Contactos .info {
+.Contacs .info {
   padding: 30px;
   background: #140f07;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.Contactos .info i {
+.Contacs .info i {
   font-size: 20px;
   color: #149ddd;
   float: left;
@@ -869,7 +890,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.Contactos .info h4 {
+.Contacs .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -877,23 +898,23 @@ section {
   color: #ffffff;
 }
 
-.Contactos .info p {
+.Contacs .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #86c1f8;
 }
 
-.Contactos .info .email p {
+.Contacs .info .email p {
   padding-top: 5px;
 }
 
-.Contactos .info .social-links {
+.Contacs .info .social-links {
   padding-left: 60px;
 }
 
 
-.Contactos .info .social-links a {
+.Contacs .info .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #333;
@@ -908,39 +929,39 @@ section {
   margin-right: 10px;
 }
 
-.Contactos .info .social-links a:hover {
+.Contacs .info .social-links a:hover {
   background: #149ddd;
   color: #fff;
 }
 
-.Contactos .info .email:hover i,
-.Contactos .info .address:hover i,
-.Contactos .info .phone:hover i {
+.Contacs .info .email:hover i,
+.Contacs .info .address:hover i,
+.Contacs .info .phone:hover i {
   background: #149ddd;
   color: #fff;
 }
 
-.Contactos .php-email-form {
+.Contacs .php-email-form {
   width: 100%;
   padding: 30px;
   background: #140f07;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.Contactos .php-email-form .form-group {
+.Contacs .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
 
 
-.Contactos .php-email-form .loading {
+.Contacs .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.Contactos .php-email-form .loading:before {
+.Contacs .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -952,30 +973,30 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.Contactos .php-email-form .form-group {
+.Contacs .php-email-form .form-group {
   margin-bottom: 15px;
 }
 
-.Contactos .php-email-form label {
+.Contacs .php-email-form label {
   padding-bottom: 8px;
 }
 
-.Contactos .php-email-form input,
-.Contactos .php-email-form textarea {
+.Contacs .php-email-form input,
+.Contacs .php-email-form textarea {
   border-radius: 6;
   box-shadow: none;
   font-size: 14px;
 }
 
-.Contactos .php-email-form input {
+.Contacs .php-email-form input {
   height: 44px;
 }
 
-.Contactos .php-email-form textarea {
+.Contacs .php-email-form textarea {
   padding: 10px 15px;
 }
 
-.Contactos .php-email-form button[type=submit] {
+.Contacs .php-email-form button[type=submit] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -984,7 +1005,7 @@ section {
   border-radius: 20px;
 }
 
-.Contactos .php-email-form button[type=submit]:hover {
+.Contacs .php-email-form button[type=submit]:hover {
   background: #37b3ed;
 }
 

@@ -143,9 +143,9 @@
   }
 
   /**
-   * Habilidades animation
+   * Skills animation
    */
-  let skilsContent = select('.Habilidades-content');
+  let skilsContent = select('.Skills-content');
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
@@ -260,3 +260,15 @@
   new PureCounter();
 
 })()
+
+
+//ajustes de skills de las herramientas
+document.addEventListener('mousemove', function(e) {
+  const spheres = document.querySelectorAll('.sphere');
+  const x = (window.innerWidth / 2 - e.pageX) / 55;
+  const y = (window.innerHeight / 2 - e.pageY) / 55;
+
+  spheres.forEach(sphere => {
+      sphere.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+  });
+});

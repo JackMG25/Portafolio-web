@@ -646,13 +646,13 @@
   .bxs-hard-hat:before {
     content: "\ef2a";
   }
-  .bxs-Inicio-alt-2:before {
+  .bxs-Home-alt-2:before {
     content: "\ef2b";
   }
   .bxs-cheese:before {
     content: "\ef2c";
   }
-  .bx-Inicio-alt-2:before {
+  .bx-Home-alt-2:before {
     content: "\ef2d";
   }
   .bx-hard-hat:before {
@@ -1648,7 +1648,7 @@
   .bx-camera:before {
     content: "\ea21";
   }
-  .bx-camera-Inicio:before {
+  .bx-camera-Home:before {
     content: "\ea22";
   }
   .bx-camera-movie:before {
@@ -2368,19 +2368,19 @@
   .bx-hive:before {
     content: "\eb11";
   }
-  .bx-Inicio:before {
+  .bx-Home:before {
     content: "\eb12";
   }
-  .bx-Inicio-alt:before {
+  .bx-Home-alt:before {
     content: "\eb13";
   }
-  .bx-Inicio-circle:before {
+  .bx-Home-circle:before {
     content: "\eb14";
   }
-  .bx-Inicio-heart:before {
+  .bx-Home-heart:before {
     content: "\eb15";
   }
-  .bx-Inicio-smile:before {
+  .bx-Home-smile:before {
     content: "\eb16";
   }
   .bx-horizontal-center:before {
@@ -3256,7 +3256,7 @@
   .bx-table:before {
     content: "\ec39";
   }
-  .bx-tacInicioter:before {
+  .bx-tacHometer:before {
     content: "\ec3a";
   }
   .bx-tag:before {
@@ -3889,7 +3889,7 @@
   .bxs-camera:before {
     content: "\ed0c";
   }
-  .bxs-camera-Inicio:before {
+  .bxs-camera-Home:before {
     content: "\ed0d";
   }
   .bxs-camera-movie:before {
@@ -4147,7 +4147,7 @@
   .bxs-confused:before {
     content: "\ed62";
   }
-  .bxs-Contactos:before {
+  .bxs-Contacs:before {
     content: "\ed63";
   }
   .bxs-conversation:before {
@@ -4543,16 +4543,16 @@
   .bxs-hide:before {
     content: "\ede6";
   }
-  .bxs-Inicio:before {
+  .bxs-Home:before {
     content: "\ede7";
   }
-  .bxs-Inicio-circle:before {
+  .bxs-Home-circle:before {
     content: "\ede8";
   }
-  .bxs-Inicio-heart:before {
+  .bxs-Home-heart:before {
     content: "\ede9";
   }
-  .bxs-Inicio-smile:before {
+  .bxs-Home-smile:before {
     content: "\edea";
   }
   .bxs-hotel:before {
@@ -5191,7 +5191,7 @@
   .bxs-sun:before {
     content: "\eebe";
   }
-  .bxs-tacInicioter:before {
+  .bxs-tacHometer:before {
     content: "\eebf";
   }
   .bxs-tag:before {
